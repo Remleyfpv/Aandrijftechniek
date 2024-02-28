@@ -15,4 +15,5 @@ Casus uitwerking aandrijftechniek in latex
 ### Terrein
 
 ## Berekeningen
-- F~z
+- Fz = 6[kg] X 1.62[m/s^2] = 9.72 [N]
+
