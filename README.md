@@ -13,3 +13,6 @@ Casus uitwerking aandrijftechniek in latex
 - 0.1 rolweerstandcoëfficiënt
 
 ### Terrein
+
+## Berekeningen
+- F~z~
