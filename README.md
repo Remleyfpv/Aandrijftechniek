@@ -15,4 +15,4 @@ Casus uitwerking aandrijftechniek in latex
 ### Terrein
 
 ## Berekeningen
-- F~z~
+- F~z
