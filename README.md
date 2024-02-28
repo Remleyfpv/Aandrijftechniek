@@ -16,7 +16,6 @@ Casus uitwerking aandrijftechniek in latex
 
 ## Berekeningen
 - Fz = 6[kg] X 1.62[m/s^2] = 9.72 [N]
-### per wiel
 - Fn = Fz / 4 = 2.43[N]  
 - Fr = 0.1 X Fn = 0.243[N]
 - 
