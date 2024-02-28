@@ -19,4 +19,7 @@ Casus uitwerking aandrijftechniek in latex
 - Fn = Fz / 4 = 2.43[N]  
 - Fr = 0.1 X Fn = 0.243[N]
 - 
+$$
+    F_r = 0.1 / 
+$$
 
