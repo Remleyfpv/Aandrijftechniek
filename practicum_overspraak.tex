@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+
+
+
+\title{Practicum HARIMP: Overspraak}
+
+\author{Jelmer Hemstra, 1810225, Flint Wardenaar, 1771881}
+
+
+\begin{document}
+    \maketitle
+
+    \begin{abstract}
+        In dit document wordt het practicum gedocumenteerd.
+
+    \end{abstract}
+
+
+    \section{Meetplan}
+        \subsection{Opstelling}
+
+            De testopstelling bestaat uit het een signaalgenerator die is aangesloten op  \(C_1\) en een oscilloscoop die is aangesloten op \(C_1\) en \(C_3\)/\(C_4\).
+            Beide van deze connecties zijn gemaakt met behulp van een coax-kabel en een coax-splitter. 
+            De afsluiting \(R_L\) kan worden verwisseld door 0, 220 en oneindig ohm. 
+        \subsection{Plan}
+        
+            Op de signaalgenerator wordt door de frequenties gestapt met stappen van x10.    
+            Door de peek-to-peek spanning op de uitgang af te lezen wordt gekeken bij welke frequenties de overspraak het grootst is.
+            Deze frequentie wordt genoteerd als \(f_{max}\).
+            
+            De twee signalen worden d.m.v de oscilloscoop vergeleken.
+            Voor elke afkap weerstand (0, 220, oneindig) wordt gekeken naar de volgende meetwaarden:
+            \begin{itemize}
+                \item Faseverschuiving \(X_N\)
+                \item Amplitude \(X_N\)
+                \item Faseverschuiving \(X_V\)
+                \item Amplitude \(X_V\)
+            \end{itemize}
+            
+
+        \subsection{Uitvoering}
+            Na benadering blijkt dat \(f_{max} = 15 MHz\).
+            Deze frequencie met een amplitude van 5 volt zijn de verschillende tests uitgevoerd.
+
+
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                Afsluiting & Faseverschuiving \(X_N\) & Amplitude \(X_N\) & Faseverschuiving \(X_V\) & Amplitude \(X_V\) \\
+                \hline
+                \(\infty\) \(\Omega\) & 4\textdegree & 6 mV & 7\textdegree & 8 mV\\
+                \hline
+            \end{tabular}
+
+
+    
+            \section{Opdrachten}
+                \subsection{Capacitieve overspraak}
+                    \subsubsection*{A}
+                        
+
+\end{document}
