@@ -3,13 +3,14 @@ Casus uitwerking aandrijftechniek in latex
 
 ## vraagstelling
 ### Hoofdvraag
-- voldoet de gekozen motor aan de gestelde eisen?
+voldoet de gekozen motor aan de gestelde eisen?
 ### Deelvragen
 - Hoeveel kracht moet de motor kunnen leveren?
--- Hoeveel rolweerstand is er
--- Hoeveel 
-- Hoe efficient is de motor?
-- 
+    - Welke krachten spelen er op de motor
+    - Hoeveel rolweerstand is er
+    - Hoeveel kracht is er nodig om met 0.7m/s/s de traagheid te overwinnen
+- Kan de motor de berekende vereiste kracht leveren, en met hoeveel marge?
+- Hoe efficient is de motor in verschillende situaties?
 
 ## Feiten:
 ### Rover
@@ -24,6 +25,8 @@ Casus uitwerking aandrijftechniek in latex
 - 0.7 [m/s^2] versnellen
 - 0.5 [m/s^2] remmen
 - 2.1 [m/s] top snelheid
+- 30  [graden] helling (op en af)
+- 
 
 ### Terrein
 
@@ -32,7 +35,9 @@ Casus uitwerking aandrijftechniek in latex
 - Fn = Fz / 4 = 2.43[N]  
 - Fr = 0.1 X Fn = 0.243[N]
 - 
+
+
 $$
-    F_r = 0.1 / 
+    F_{as} = 
 $$
 
