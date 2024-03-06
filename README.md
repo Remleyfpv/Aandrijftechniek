@@ -1,7 +1,15 @@
 # Aandrijftechniek
 Casus uitwerking aandrijftechniek in latex
 
-
+## vraagstelling
+### Hoofdvraag
+- voldoet de gekozen motor aan de gestelde eisen?
+### Deelvragen
+- Hoeveel kracht moet de motor kunnen leveren?
+-- Hoeveel rolweerstand is er
+-- Hoeveel 
+- Hoe efficient is de motor?
+- 
 
 ## Feiten:
 ### Rover
