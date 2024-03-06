@@ -37,6 +37,8 @@ voldoet de gekozen motor aan de gestelde eisen?
 - 
 
 
+$$Torque[Nm] = radius[m] * rolweerstandcoöficient * F_z[m/s^2] * cos(\theta) + radius[m] * massa[kg] * acceleration[m/s^2] + Inertia[kg/m^2] * \frac{acceleration[m/s^2]}{2\pi radius[m] } $$
+
 $$
     F_{as} = 
 $$
