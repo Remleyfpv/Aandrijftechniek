@@ -12,6 +12,11 @@ Casus uitwerking aandrijftechniek in latex
 - 0.9 wrijvings coëfficiënt
 - 0.1 rolweerstandcoëfficiënt
 
+### Eisen
+- 0.7 [m/s^2] versnellen
+- 0.5 [m/s^2] remmen
+- 2.1 [m/s] top snelheid
+
 ### Terrein
 
 ## Berekeningen
