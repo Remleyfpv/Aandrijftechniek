@@ -30,26 +30,26 @@ voldoet de gekozen motor aan de gestelde eisen?
 
 ### Terrein
 
-## Berekeningen
+## Berekening vereiste kracht 
 - Fz = 6[kg] X 1.62[m/s^2] = 9.72 [N]
 - Fn = Fz / 4 = 2.43[N]  
 - Fr = 0.1 X Fn = 0.243[N]
 - 
 
-#### Versnelling
+### Versnelling
 De kracht die nodig is om de massa van de buggy te versnellen wordt beschreven met de onderstaande formule.
 $$
     F_a = ma
 $$
 
-#### Kracht de heuvel af
+### Kracht de heuvel af
 De kracht die de rover de helling afduwt wordt gegeven in $F_{zh}$ en wordt beschreven met de onderstaande formule.  
 $$
     F_{zh} = mg\sin(\theta)  
 $$
 Hier is $m$ de massa van de rover, $g$ de valversnelling en $\theta$ de hoek van het oppervlak.
 
-#### Rolweerstand 
+### Rolweerstand 
 De kracht die het rollen van de rover tegenwerkt $F_{rw}$ wordt beschreven met de volgende formule. 
 $$
     F_{rw} = \mu_r F_N 
@@ -64,7 +64,7 @@ $$
 $$   
 Hier is $\mu_r$ de rolweerstandscoëfficiënt, $m$ de massa van de rover, $g$ de valversnelling en $\theta$ de hoek van het oppervlak.
 
-#### Wieltraagheid
+### Wieltraagheid
 De versnelling van een wiel als gevolg van een toegepast koppel wordt beschreven in de onderstaande formule.
 $$
     T = J \alpha 
@@ -82,13 +82,13 @@ $$
     T_{J} =  \frac{aJ}{r}
 $$
 
-#### Samenvoeging
+### Samenvoeging
 
 In de bovenstaande kopjes zijn $F_a,F_{zh},F_{rw}$ beshreven. Door ze allemaal als koppel te beschrijven kunnen ze samengevoegd worden met de formule voor de wieltraagheid.
 $$
     T_{a,zh,rw} = (F_a + F_{zh} +  F_{rw})r
 $$
-want:
+want de formule voor koppel is:
 $$
     T = F r
 $$
@@ -98,14 +98,47 @@ $$
 $$
 Waar $N$ het aantal wielen is.
 
-Het uitschrijven van alle componenten resulteerd in de onderstaande formule.
+### Invulling
+Nu zullen de componenten van de fomule worden ingevuld en berekend.
+We weten de waarde van de volgende elementen:
 $$
-    T_{tot} = \frac{(ma + mg \sin(\theta)  +  \mu_r m g \cos(\theta) )r}{N} + \frac{aJ}{r}
+\begin{split}   
+    m &= 6 \space kg\\
+    a &= 0.7 \space ms^{-2}\\
+    J &= 2.1 \cdot 10^{-3} \space  kg \cdot m^2\\
+    \mu_r &= 0.1\\
+    r &= 0.075 \space m\\
+    N &= 4\\
+    v_{max} &= 2.1 ms^{-1}\\
+    g_{maan} &= 1.62 \space ms^{-2}
+\end{split}
 $$
-Dat versimpelt kan worden naar 
+Voor de hoek van het oppervlak moeten verschillende waarden worden ingevuld voor drie situaties: vlak, berg op, berg af.
 $$
-    T_{tot} = \frac{(a + g \sin(\theta)  +  \mu_r g \cos(\theta) )r m }{N} + \frac{aJ}{r}
+    \begin{split}
+        \theta_{vlak} &= 0\degree\\
+        \theta_{op} &= 20\degree\\
+        \theta_{af} &= -20\degree
+    \end{split}
+$$
+Hieruit kunnen we per situatie de krachten berekenen
+
+#### Berekening vlak
+De krachten voor de situatie $\theta_{vlak} = 0\degree$ komen uit op de volgende waarden:
+$$
+    \begin{split}
+        F_a = ma &= 6 \cdot 0.7 = 4.2  \space N\\
+        F_{zh} = mg\sin(\theta) &= 6 \cdot 1.62 \cdot \sin(0) = 0 \space N\\
+        F_{rw} = \mu_r m g \cos(\theta) &= 0.1 \cdot 6 \cdot 1.62 \cdot \cos(0) = 0.972 \space N
+    \end{split}
 $$
 
-
-
+Hiermee kan vervolgens het totale koppel berekend worden.
+$$
+\begin{split}
+    T_{a,zh,rw} = (F_a + F_{zh} +  F_{rw})r &= (4.2 + 0+0.972)\cdot 0.075 = 387.9  \space mNm\\
+    T_{J} =  \frac{aJ}{r} &= \frac{0.7 \cdot 2.1 \cdot 10^{-3}}{0.075} = 19.6 \space mNm\\
+    T_{tot} =  \frac{T_{a,zh,rw}}{4} + T_{J} &= \frac{387.9}{4} + 19.6 = 116.6 \space mNm
+\end{split}
+$$
+Ter conclusie: op een vlak oppervlak wordt er maximaal  $116.6mNm$ vereist van elke motor, ongeacht van het toerental.
