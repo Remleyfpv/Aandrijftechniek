@@ -163,3 +163,22 @@ $$
 $$
 Ter conclusie: op een steigende helling van $20 \degree$ wordt er maximaal  $178 \space mNm$ vereist van elke motor, ongeacht het toerental.
 
+#### Berekening berg af
+De krachten voor de situatie $\theta_{af} = -20\degree$ komen uit op de volgende waarden:
+$$
+    \begin{split}
+        F_a = ma &= 6 \cdot 0.7 = 4.2  \space N\\
+        F_{zh} = mg\sin(\theta) &= 6 \cdot 1.62 \cdot \sin(-20) = -3.33 \space N\\
+        F_{rw} = \mu_r m g \cos(\theta) &= 0.1 \cdot 6 \cdot 1.62 \cdot \cos(-20) = 0.913 \space N
+    \end{split}
+$$
+
+Hiermee kan vervolgens het totale koppel berekend worden.
+$$
+\begin{split}
+    T_{a,zh,rw} = (F_a + F_{zh} +  F_{rw})r &= (4.2 - 3.33 + 0.913)\cdot 0.075 = 134\space mNm\\
+    T_{J} =  \frac{aJ}{r} &= \frac{0.7 \cdot 2.1 \cdot 10^{-3}}{0.075} = 19.6 \space mNm\\
+    T_{tot} =  \frac{T_{a,zh,rw}}{4} + T_{J} &= \frac{134}{4} + 19.6 = 53 \space mNm
+\end{split}
+$$
+Ter conclusie: op een dalende helling van $-20 \degree$ wordt er maximaal  $53 \space mNm$ vereist van elke motor, ongeacht het toerental.
