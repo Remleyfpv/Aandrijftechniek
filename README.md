@@ -9,7 +9,11 @@ voldoet de gekozen motor aan de gestelde eisen?
     - Welke krachten spelen er op de motor
     - Hoeveel rolweerstand is er
     - Hoeveel kracht is er nodig om met 0.7m/s/s de traagheid te overwinnen
-- Kan de motor de berekende vereiste kracht leveren, en met hoeveel marge?
+    - Wat is de gemiddelde helling op de maan?
+    - 
+- Welke motor-overbrenging-combinatie is geschikt?
+    - wat zijn de eisen?
+    - Hoeveel vermogen moet het kunnen leveren?
 - Hoe efficient is de motor in verschillende situaties?
 
 ## Feiten:
@@ -182,3 +186,16 @@ $$
 \end{split}
 $$
 Ter conclusie: op een dalende helling van $-20 \degree$ wordt er maximaal  $53 \space mNm$ vereist van elke motor, ongeacht het toerental.
+
+## Onderzoek motor & overbrenging
+### Eisen
+- Max hoeksnelheid = 28 rad/s = 267 rpm
+- motor diameter = 25 mm
+- rendement = 80-90 %
+- $T_0 > 178 mNm$ 
+- T min < -120
+- T max > 25
+
+### succescriteria
+- gewicht 
+- trilbestendigheid
