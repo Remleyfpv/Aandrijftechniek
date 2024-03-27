@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.11)  27 MAR 2024 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.11)  27 MAR 2024 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repos/Aandrijftechniek/Aandrijftechniek/formula.tex
-(c:/Repos/Aandrijftechniek/Aandrijftechniek/formula.tex
+**a:/Repos/Aandrijftechniek/formula.tex
+(a:/Repos/Aandrijftechniek/formula.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -540,20 +540,7 @@ LaTeX Font Info:    ... okay on input line 31.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 31.
- (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
-\scratchdimen=\dimen261
-\scratchbox=\box116
-\nofMPsegments=\count337
-\nofMParguments=\count338
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count339
-\MPscratchDim=\dimen262
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
-\everyMPtoPDFconversion=\toks30
-) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
@@ -568,7 +555,7 @@ Package hyperref Info: Link coloring ON on input line 31.
 \@outlinefile=\write3
 \openout3 = `formula.out'.
 
-\c@lstlisting=\count342
+\c@lstlisting=\count336
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
@@ -630,21 +617,21 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `formula.out' has not changed.
-(rerunfilecheck)             Checksum: 2D5E67B5088AAA30DE608858F86B10F1;1149.
+(rerunfilecheck)             Checksum: 704789F33EBE8256D6EECFB06921AE66;1232.
  ) 
 Here is how much of TeX's memory you used:
- 18897 strings out of 474166
- 362310 string characters out of 5749518
+ 18597 strings out of 474166
+ 358264 string characters out of 5749518
  1939528 words of memory out of 5000000
- 41002 multiletter control sequences out of 15000+600000
+ 40706 multiletter control sequences out of 15000+600000
  564059 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,9n,93p,380b,916s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,9n,93p,363b,916s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on formula.pdf (3 pages, 152025 bytes).
+Output written on formula.pdf (3 pages, 152257 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

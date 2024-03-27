@@ -1,8 +1,8 @@
-PWD c:/Repos/Aandrijftechniek/Aandrijftechniek
+PWD a:/Repos/Aandrijftechniek
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Repos/Aandrijftechniek/Aandrijftechniek/formula.tex
+INPUT a:/Repos/Aandrijftechniek/formula.tex
 OUTPUT formula.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -164,9 +164,6 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
-INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
