@@ -31,24 +31,37 @@
 
 \begin{document}
 \maketitle
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{Maanlanderfixed.png}
+    \caption{Moonrover gemaakt door DALL-E}
+    \label{fig:moonrover2}
+\end{figure}
 \newpage
 \tableofcontents
 \newpage
 \begin{abstract}
-    In dit document wordt de casus van de aandrijftechniek van de moonnrover behandeld. 
-    Voor deze casus schrijven wij een adviesrapport voor de keuze van de motor en gearbox.
-
+    Dit document is een raportage van de casus Euro Moon Rover. 
+    Dit hoort bij de opdracht van het vak Aandrijftechniek.
+    De opdracht is om een motor en gearbox te selecteren voor de Euro Moon Rover.
+    Er zijn hiervoor een aantal eisen opgesteld die in dit document worden behandeld.
+    Er wordt gekeken naar de statische en dynamische lasten die de motor moet verdragen.
+    Ook wordt er gekeken naar de meest voorkomende last en hoe deze het beste kan worden opgelost.
+    Uit dit onderzoek is het advies gekomen om de RE25 118745 motor te gebruiken in combinatie met de GP 26A 406757 gearbox.
 \end{abstract}
 
 
 \section{Inleiding}
-    In dit document wordt de casus van de aandrijftechniek van de rover behandeld. 
+    In dit verslag gaan we onderzoeken welke motor en gearbox het beste is voor de Euro Moon Rover.
+    We beginnen met het analyseren van de eisen en gegevens die we hebben gekregen.
+    Daarna gaan we onderzoeken welke lasten de motor moet verdragen en welke motor en gearbox het beste is voor deze lasten.
+    In de resultaten bespreken we de uitkomsten van het onderzoek en in het advies geven we aan welke motor en gearbox het beste is voor de Euro Moon Rover.
 
 
     \section{Analyse}
         \subsection{Onderzoeksvragen}
             Hoofdvraag: \newline
-            Welke cobinatie van motor en overbrenging, 
+            Welke combinatie van motor en overbrenging, 
             van de familie ``RE25 1187xx'' en ``Planetary Gearhead GP xx xx'' respectievelijk, 
             is het meest geschikt als aandrijving van de ``Euro Moon Rover``?
             \newline \newline
@@ -211,6 +224,7 @@
             \subsubsection*{Terein}
                 Om een inschatting te maken over het terein op de maan is er een schriftelijk onderzoek gedaan.
                 Uit dit onderzoek is een publicatie van NASA gevonden uit 1969 (nasa sp-8023, 1969), waarin de eigenschappen van het maanlandschap worden beschreven.
+                Dit onderzoek is te vinden in Bijlage \ref{Bijlage C}.
                 In de grafiek in figuur \ref{fig:maanhelling} is te zien hoe groot de gemiddelde helling is op de maan.
                 Door te kijken naar de kleinste hellinglengte en het nominale landschap, zien we dat de gemiddelde helling zo'n $8.5^\circ$ is.
 
@@ -227,7 +241,7 @@
 
     \subsection{last}
     De statische en dynamische lasten zijn berekend voor verschillende hellingen. 
-    Deze berekeningen zijn gedaan met formule x en y.
+    Deze berekeningen zijn gedaan met formule 5 en 8.
     De hellingen die we hebben gekozen om uit te rekenen zijn -20, -8,5, 0, 8,5 en 20 graden.
     De reden hiervoor is toegelicht in het onderzoek.
     Uit deze berekeningen zijn de volgende resultaten gekomen: 
@@ -251,7 +265,7 @@
     De motor is gekozen aan de hand van de tabel 1 in hoofdstuk 3.1. 
     Ook is er gekeken naar de gearbox daar geldt namenlijk dat hoe minder vertanding de gearbox hoeft te doen hoe efficienter deze is. 
     Hierdoor is er gekozen voor een so traag mogelijke motor binnen de RE25 1187 serie.
-    De motor die gekozen is is de RE25 118745.
+    De motor die gekozen is is de RE25 118745 de datasheet van deze motor staat in bijlage \ref{Bijlage A}.
     Hiervan staat de datasheet in de bijlage.
     Deze motor heeft een nominale snelheid van 3710 [rpm], een maximale efficientie van 90 procent en een nominale koppel van 28.7 [mNm].
     De no-load snelheid is 4790 [rpm].
@@ -261,6 +275,7 @@
     De gearbox is gekozen aan de hand van de motor. 
     In de datasheet van de motor worden namenlijk een aantal gearboxes aangeraden.
     Een daarvan is degende die wij gekozen hebben, namenlijk de GP 26A 406757. 
+    De datasheet van deze gearbox staat in bijlage \ref{Bijlage B}.
     Deze gearbox heeft een vertanding van 5.2:1. dit zorgt voor een Nominale snelheid van 710 [rpm] en een nominale koppel van 150 [mNm]. 
     Dit is meer dan genoeg koppel om met een constante snelheid van 2.1 [m/s] te rijden op een helling van 20 graden.
 
@@ -273,6 +288,7 @@
     Ook kan er met deze motor en gearbox op een helling van 20 graden versneld worden met 0.7 [m/s] en vertraagd worden met 0.5 [m/s].
     Deze motor en gearbox combinatie is een van de meest efficiente combinaties die er zijn voor deze toepassing met de gestelde serie eisen.
     De beweerde efficientie van 90 procent is de hoogste in de RE25 1187 serie.
+    Dit maakt hem volgens ons de beste keuze voor een rover die op zonne energie rijdt.
 
 
 % All other content before appendices should go above this line
@@ -280,7 +296,14 @@
 % Place this right before the appendix command
 \clearpage
 \appendix
+\section{Motor Datasheet}
+\label{Bijlage A}
 \includepdf[pages=-]{EN-22-152.pdf}
+\section{Gearbox Datasheet}
+\label{Bijlage B}
 \includepdf[pages=-]{EN-21-390.pdf}
+\section{Onderzoek naar maanlandschap NASA}
+\label{Bijlage C}
+\includepdf[pages=-]{Lunar_surface_models.pdf}
 
 \end{document}
