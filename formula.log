@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.11)  29 MAR 2024 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.11)  29 MAR 2024 13:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,42 +595,46 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
-Underfull \hbox (badness 10000) in paragraph at lines 45--51
+)) [1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./formula.toc)
+\tf@toc=\write4
+\openout4 = `formula.toc'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 49--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--89
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
-[1
-
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 176--180
+[3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--180
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 
  []
 
-[3] [4]
+[5] [6]
 
 pdfTeX warning: pdflatex.exe (file ./EN-22-152.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<EN-22-152.pdf, id=110, 625.96059pt x 845.0471pt>
+<EN-22-152.pdf, id=134, 625.96059pt x 845.0471pt>
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf>
-Package pdftex.def Info: EN-22-152.pdf  used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf  used on input line 251.
 (pdftex.def)             Requested size: 625.95905pt x 845.04504pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./EN-22-152.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf>
-Package pdftex.def Info: EN-22-152.pdf  used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf  used on input line 251.
 (pdftex.def)             Requested size: 625.95905pt x 845.04504pt.
 
 
@@ -638,43 +642,43 @@ pdfTeX warning: pdflatex.exe (file ./EN-22-152.pdf): PDF inclusion: found PDF ve
 
 
 pdfTeX warning: pdflatex.exe (file ./EN-22-152.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<EN-22-152.pdf, id=113, page=1, 625.96059pt x 845.0471pt>
+<EN-22-152.pdf, id=137, page=1, 625.96059pt x 845.0471pt>
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf, page 1>
-Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 251.
 (pdftex.def)             Requested size: 625.95905pt x 845.04504pt.
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf, page 1>
-Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 251.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf, page 1>
-Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 251.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf, page 1>
-Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 251.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
 File: EN-22-152.pdf Graphic file (type pdf)
 <use EN-22-152.pdf, page 1>
-Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 236.
+Package pdftex.def Info: EN-22-152.pdf , page1 used on input line 251.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
-[5
+[7
 
  <./EN-22-152.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./EN-21-390.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<EN-21-390.pdf, id=164, 625.96059pt x 845.0471pt>
+<EN-21-390.pdf, id=189, 625.96059pt x 845.0471pt>
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf>
-Package pdftex.def Info: EN-21-390.pdf  used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf  used on input line 252.
 (pdftex.def)             Requested size: 625.95905pt x 845.04504pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./EN-21-390.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf>
-Package pdftex.def Info: EN-21-390.pdf  used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf  used on input line 252.
 (pdftex.def)             Requested size: 625.95905pt x 845.04504pt.
 
 
@@ -682,48 +686,48 @@ pdfTeX warning: pdflatex.exe (file ./EN-21-390.pdf): PDF inclusion: found PDF ve
 
 
 pdfTeX warning: pdflatex.exe (file ./EN-21-390.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<EN-21-390.pdf, id=167, page=1, 625.96059pt x 845.0471pt>
+<EN-21-390.pdf, id=192, page=1, 625.96059pt x 845.0471pt>
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf, page 1>
-Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 252.
 (pdftex.def)             Requested size: 625.95905pt x 845.04504pt.
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf, page 1>
-Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 252.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf, page 1>
-Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 252.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf, page 1>
-Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 252.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
 File: EN-21-390.pdf Graphic file (type pdf)
 <use EN-21-390.pdf, page 1>
-Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 237.
+Package pdftex.def Info: EN-21-390.pdf , page1 used on input line 252.
 (pdftex.def)             Requested size: 598.42242pt x 807.87059pt.
-[6 <./EN-21-390.pdf>] (./formula.aux)
+[8 <./EN-21-390.pdf>] (./formula.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `formula.out' has not changed.
-(rerunfilecheck)             Checksum: 612241343EB6CED44B507DA6B7128D7E;1546.
+(rerunfilecheck)             Checksum: 4624C108863499FFF798A35FCA2653A0;1526.
  ) 
 Here is how much of TeX's memory you used:
- 19774 strings out of 474166
- 377086 string characters out of 5749518
- 1942528 words of memory out of 5000000
- 41830 multiletter control sequences out of 15000+600000
+ 19784 strings out of 474166
+ 377190 string characters out of 5749518
+ 1938528 words of memory out of 5000000
+ 41834 multiletter control sequences out of 15000+600000
  564394 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,17n,93p,380b,1046s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on formula.pdf (6 pages, 366853 bytes).
+Output written on formula.pdf (8 pages, 369517 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -23,16 +23,20 @@
 
 
 
-\title{Aandrijftechniek maan casus}
+\title{Aandrijftechniek Euro Moon Rover Casus}
 
 \author{Jelmer Hemstra, 1810225, Flint Wardenaar, 1771881}
 
 
 \begin{document}
 \maketitle
-
+\newpage
+\tableofcontents
+\newpage
 \begin{abstract}
-    In dit document wordt de casus van de aandrijftechniek van de rover behandeld. Hierbij wordt gekeken naar de verschillende aandrijftechnieken en de voor- en nadelen van deze technieken.
+    In dit document wordt de casus van de aandrijftechniek van de moonnrover behandeld. 
+    Voor deze casus schrijven wij een adviesrapport voor de keuze van de motor en gearbox.
+
 \end{abstract}
 
 
@@ -183,13 +187,17 @@
 
 
 \subsection{Analyse van de motoren}
-\subsubsection{gearbox?}
+\subsection{gearbox}
 
 \section{Resultaten}
-    Uitkomsten van de analyse, het onderzoek worden gepresenteerd. max 2 A4tjes
+    In dit hoofdstuk worden de resultaten van de berekeningen en de keuze van de motor en gearbox besproken.
+    Deze keuzes zijn gemaakt aan de hand van het onderzoek.
 
     \subsection{last}
     De statische en dynamische lasten zijn berekend voor verschillende hellingen. 
+    Deze berekeningen zijn gedaan met formule x en y.
+    De hellingen die we hebben gekozen om uit te rekenen zijn -20, -8,5, 0, 8,5 en 20 graden.
+    De reden hiervoor is toegelicht in het onderzoek.
     Uit deze berekeningen zijn de volgende resultaten gekomen: 
 
         \begin{table}[h]
@@ -198,26 +206,26 @@
             \hline
             Helling & $-20 ^\circ$ & $-8.5 ^\circ$ & $0 ^\circ$ & $8.5 ^\circ$ & $20 ^\circ$ \\ \hline
             Statisch [mNm]  & -45.20   & -8.91   & 18.22   & 44.96  & 79.45   \\ \hline
-            Dynamisch [mNm]  & 53.13  & 89.43   & 116.57  & 143.31  & 177.81  \\ \hline
+            Dynamisch [mNm] & 98.33    & 98.33   & 98.33   & 98.33  & 98.33  \\ \hline
+            Totaal [mNm] & 53.13  & 89.43   & 116.57  & 143.31  & 177.81  \\ \hline
             \end{tabular}
             \caption{Helling - Koppel}
             \label{tab}
         \end{table}
-        Dit is gedaan met de volgende formules:
-        $$T_{statisch} = \frac{r_{wiel}(m \cdot g \cdot sin(\theta) + u_r \cdot m \cdot g \cdot cos(\theta))}{4} = \frac{0.075(9.72 \cdot sin(\theta) +  0.972 \cdot cos(\theta))}{4}$$
-        $$T_{dynamisch} = T_{statisch} + \frac{m \cdot a \cdot r_{wiel}}{4} + \frac{I_{wielen} \cdot a}{r_{wiel}} = T_{statisch} + \frac{0.315}{4}+ 0.0196 $$
-        Deze formules zijn toegelicht in hoofdstuk 2.1.
+    
+    Deze tabel laat zien dat de grootste last die de motor moet verdragen is bij  een versnelling van 0.7 $[m/s^2]$ op een helling van 20 graden.
         
     \subsection{Motor}
-    De motor is gekozen aan de hand van de tabel in 3.1. 
+    De motor is gekozen aan de hand van de tabel 1 in hoofdstuk 3.1. 
     Ook is er gekeken naar de gearbox daar geldt namenlijk dat hoe minder vertanding de gearbox hoeft te doen hoe efficienter deze is. 
     Hierdoor is er gekozen voor een so traag mogelijke motor binnen de RE25 1187 serie.
-    De motor die gekozen is is de RE25 118745. 
-    Deze motor heeft een No-load speed van 4790 [rpm], een maximale efficientie van 90 procent en een nominale koppel van 28.7 [mNm].
-    De nominale snelheid van de motor is 3710 [rpm].
+    De motor die gekozen is is de RE25 118745.
+    Hiervan staat de datasheet in de bijlage.
+    Deze motor heeft een nominale snelheid van 3710 [rpm], een maximale efficientie van 90 procent en een nominale koppel van 28.7 [mNm].
+    De no-load snelheid is 4790 [rpm].
     
 
-    \subsection{gearhead}
+    \subsection{gearbox}
     De gearbox is gekozen aan de hand van de motor. 
     In de datasheet van de motor worden namenlijk een aantal gearboxes aangeraden.
     Een daarvan is degende die wij gekozen hebben, namenlijk de GP 26A 406757. 
@@ -225,7 +233,14 @@
     Dit is meer dan genoeg koppel om met een constante snelheid van 2.1 [m/s] te rijden op een helling van 20 graden.
 
 \section{Advies}
-    De
+    Het advies wat blijkt uit dit verslag is om de RE25 118745 motor te gebruiken in combinatie met de GP 26A 406757 gearbox. 
+    Deze combinatie voldoet aan alle eisen die gesteld zijn in de opdracht.
+    De motor heeft een nominale snelheid van 3710 [rpm] en een nominale koppel van 28.7 [mNm].
+    De gearbox heeft een vertanding van 5.2:1 en daardoor wordt de nominale snelheid 710 [rpm] en de nominale koppel van 150 [mNm].
+    Dit is meer dan genoeg om een constante snelheid van 2.1 [m/s] te rijden op een helling van 20 graden.
+    Ook kan er met deze motor en gearbox op een helling van 20 graden versneld worden met 0.7 [m/s] en vertraagd worden met 0.5 [m/s].
+    Deze motor en gearbox combinatie is een van de meest efficiente combinaties die er zijn voor deze toepassing met de gestelde serie eisen.
+    De beweerde efficientie van 90 procent is de hoogste in de RE25 1187 serie.
 
 
 % All other content before appendices should go above this line
