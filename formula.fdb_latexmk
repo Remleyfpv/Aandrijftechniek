@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1711707014.15925 "c:/Repos/Aandrijftechniek/formula.tex" "formula.pdf" "formula" 1711707016.55532 0
-  "c:/Repos/Aandrijftechniek/formula.tex" 1711707013 8927 06f5c27dcf0c65221dbf70f1a87299c8 ""
+["pdflatex"] 1711707251.35357 "c:/Repos/Aandrijftechniek/formula.tex" "formula.pdf" "formula" 1711707254.21794 0
+  "c:/Repos/Aandrijftechniek/formula.tex" 1711707249 8997 16e3676218ed908bdf4d03bff30fd27f ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1709116425 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1709117213 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1709116890 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -115,9 +115,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709120647 5518052 de2a91c664d75f3971de4662dc6b5a65 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709120845 8220664 b9c5d48bb17855c163edd64d6f9d5e98 ""
   "c:/texlive/2023/texmf.cnf" 1709120609 713 e69b156964470283e0530f5060668171 ""
-  "formula.aux" 1711707016 2004 cbda8afddef7dda1af02bc18cf07b6bb "pdflatex"
-  "formula.out" 1711707016 1365 7c86ecaba8c75ce204310b73dd9140b5 "pdflatex"
-  "formula.tex" 1711707013 8927 06f5c27dcf0c65221dbf70f1a87299c8 ""
+  "formula.aux" 1711707253 2004 cbda8afddef7dda1af02bc18cf07b6bb "pdflatex"
+  "formula.out" 1711707253 1365 7c86ecaba8c75ce204310b73dd9140b5 "pdflatex"
+  "formula.tex" 1711707249 8997 16e3676218ed908bdf4d03bff30fd27f ""
   (generated)
   "formula.aux"
   "formula.log"
