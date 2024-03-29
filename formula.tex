@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage[english]{babel}
+\usepackage[dutch]{babel}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 
@@ -18,7 +18,7 @@
 \usepackage{mathtools}
 \usepackage{listings}
 \usepackage{xcolor}
-
+\usepackage{pdfpages}
 
 
 
@@ -126,7 +126,8 @@
     Uitkomsten van de analyse, het onderzoek worden gepresenteerd. max 2 A4tjes
 
     \subsection{last}
-    De statische en dynamische lasten zijn berekend voor verschillende hellingen. Uit deze berekeningen zijn de volgende resultaten gekomen: 
+    De statische en dynamische lasten zijn berekend voor verschillende hellingen. 
+    Uit deze berekeningen zijn de volgende resultaten gekomen: 
 
         \begin{table}[h]
             \centering
@@ -142,17 +143,34 @@
         Dit is gedaan met de volgende formules:
         $$T_{statisch} = \frac{r_{wiel}(m \cdot g \cdot sin(\theta) + u_r \cdot m \cdot g \cdot cos(\theta))}{4} = \frac{0.075(9.72 \cdot sin(\theta) +  0.972 \cdot cos(\theta))}{4}$$
         $$T_{dynamisch} = T_{statisch} + \frac{m \cdot a \cdot r_{wiel}}{4} + \frac{I_{wielen} \cdot a}{r_{wiel}} = T_{statisch} + \frac{0.315}{4}+ 0.0196 $$
-        Deze formules zijn toegelicht in hoofdstuk 2.1.    
+        Deze formules zijn toegelicht in hoofdstuk 2.1.
         
     \subsection{Motor}
-        
+    De motor is gekozen aan de hand van de tabel in 3.1. 
+    Ook is er gekeken naar de gearbox daar geldt namenlijk dat hoe minder vertanding de gearbox hoeft te doen hoe efficienter deze is. 
+    Hierdoor is er gekozen voor een so traag mogelijke motor binnen de RE25 1187 serie.
+    De motor die gekozen is is de RE25 118745. 
+    Deze motor heeft een No-load speed van 4790 [rpm], een maximale efficientie van 90 procent en een nominale koppel van 28.7 [mNm].
+    De nominale snelheid van de motor is 3710 [rpm].
+    
 
+    \subsection{gearhead}
+    De gearbox is gekozen aan de hand van de motor. 
+    In de datasheet van de motor worden namenlijk een aantal gearboxes aangeraden.
+    Een daarvan is degende die wij gekozen hebben, namenlijk de GP 26A 406757. 
+    Deze gearbox heeft een vertanding van 5.2:1. dit zorgt voor een Nominale snelheid van 710 [rpm] en een nominale koppel van 150 [mNm]. 
+    Dit is meer dan genoeg koppel om met een constante snelheid van 2.1 [m/s] te rijden op een helling van 20 graden.
 
 \section{Advies}
-    Aan de hand van het onderzoek en de
-    bijbehorende resultaten wordt een onderbouwd
-    advies uitgebracht. max 1 A4tje
+    De
 
+
+% All other content before appendices should go above this line
+% Now, include the PDF files as appendices
+% Place this right before the appendix command
+\clearpage
 \appendix
+\includepdf[pages=-]{EN-22-152.pdf}
+\includepdf[pages=-]{EN-21-390.pdf}
 
 \end{document}
