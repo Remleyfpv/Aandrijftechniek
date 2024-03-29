@@ -19,6 +19,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
+\graphicspath{{./photos/}}
 
 
 
@@ -29,193 +30,223 @@
 
 
 \begin{document}
-\maketitle
-
-\begin{abstract}
-    In dit document wordt de casus van de aandrijftechniek van de rover behandeld. Hierbij wordt gekeken naar de verschillende aandrijftechnieken en de voor- en nadelen van deze technieken.
-\end{abstract}
 
 
-\section{Inleiding}
-    In dit document wordt de casus van de aandrijftechniek van de rover behandeld. 
+    \begin{abstract}
+        In dit document wordt de casus van de aandrijftechniek van de ``Euro Moon Rover'' behandeld. 
+        Hierbij zullen de nominale en maximale lasten in kaart worden gebracht.
+        Op basis van het onderzoek zal er een keuze worden gemaakt in het te gebruiken motor en overbrenging.
+    \end{abstract}
+
+    \section{Analyse}
+        \subsection{Onderzoeksvragen}
+            Hoofdvraag: \newline
+            Welke cobinatie van motor en overbrenging, 
+            van de familie ``RE25 1187xx'' en ``Planetary Gearhead GP xx xx'' respectievelijk, 
+            is het meest geschikt als aandrijving van de ``Euro Moon Rover``?
+            \newline \newline
+            Deelvragen: 
+            \begin{itemize}
+                \item Wat is de statische last?
+                \item Wat is de dynamische last?
+                \item Wat is de meest voorkomende last?
+            \end{itemize}
+
+        \subsection{Eisen}
+            Uit de opdrachtsbeschrijving zijn de volgende eisen gehaald:
+            \begin{enumerate}
+                \item De rover moet een helling van $20^{\circ}$ op en af kunnen rijden.
+                \item De rover moet kunnen versnellen met $0.7[m/s^2]$ en vertragen met $0.5[m/s^2]$.
+                \item De rover moet een topsnelheid hebben van ninstens $2.1[m/s]$.
+                \item De motor moet deel uitmaken van de ``RE25 1187xx'' familie en heeft een diameter van 25mm.
+                \item De overbrenging moet deel uitmaken van de ``Planetary Gearhead GP xx xx'' familie.
+            \end{enumerate}
+        
+        \subsection{Gegevens}
+            Uit de opdracht zijn de volgende gegevens gehaald:
+            \begin{itemize}
+                \item De massa van de de rover: $m = 6[kg]$
+                \item De valversnelling op de maan: $g_m = 1.62[m/s^2]$
+                \item De rolweerstandscoëfficiënt: $\mu_r = 0.1$
+                \item De straal van de wielen: $r = 0.075[m]$
+                \item De massatraagheidvan de wielen: $J = 0.0021[kg \cdot m^2]$
+            \end{itemize}
+            Ook zijn de eisen genoteerd als gegevens:
+            \begin{itemize}
+                \item De maximale helling: $\theta_{max} = 20^\circ$
+                \item De maximale versnelling: $a_{max} = 0.7[m/s^2]$
+                \item De maximale snelheid: $v_{max} = 2.1[m/s]$
+            \end{itemize}
+
+    \section{Onderzoek}
+        Om te bepalen welk type motor het beste is voor de toepassing wordt er vooral gekeken naar de last die de motor moet verdragen.
+        De last is opgedeeld in statische en dynamische last. 
+        De statische last is de last die de motor moet verdragen als de rover een vaste snelheid heeft.
+        De dynamische last is de last die de motor moet verdragen als de rover versnelt of vertraagt.
+
+        \begin{equation}
+            T_{tot} = T_{stat} + T_{dyn} 
+        \end{equation}
 
 
-\section{Analyse}
-    \subsection{Onderzoeksvragen}
-        Hoofdvraag: \newline
-        Welke cobinatie van motor en overbrenging, 
-        van de familie ``RE25 1187xx'' en ``Planetary Gearhead GP xx xx'' respectievelijk, 
-        is het meest geschikt als aandrijving van de ``Euro Moon Rover``?
-        \newline \newline
-        Deelvragen: 
-        \begin{itemize}
-            \item Wat is de statische last?
-            \item Wat is de dynamische last?
-            \item Wat is de meest voorkomende last?
-        \end{itemize}
-
-    \subsection{Eisen}
-        Uit de opdrachtsbeschrijving zijn de volgende eisen gehaald:
-        \begin{enumerate}
-            \item De rover moet een helling van $20^{\circ}$ op en af kunnen rijden.
-            \item De rover moet kunnen versnellen met $0.7[m/s^2]$ en vertragen met $0.5[m/s^2]$.
-            \item De rover moet een topsnelheid hebben van ninstens $2.1[m/s]$.
-            \item De motor moet deel uitmaken van de ``RE25 1187xx'' familie en heeft een diameter van 25mm.
-            \item De overbrenging moet deel uitmaken van de ``Planetary Gearhead GP xx xx'' familie.
-        \end{enumerate}
-    
-    \subsection{Gegevens}
-        Uit de opdracht zijn de volgende gegevens gehaald:
-        \begin{itemize}
-            \item De massa van de de rover: $m = 6[kg]$
-            \item De valversnelling op de maan: $g_m = 1.62[m/s^2]$
-            \item De rolweerstandscoëfficiënt: $\mu_r = 0.1$
-            \item De straal van de wielen: $r = 0.075[m]$
-            \item De massatraagheidvan de wielen: $J = 0.0021[kg \cdot m^2]$
-        \end{itemize}
-        Ook zijn de eisen genoteerd als gegevens:
-        \begin{itemize}
-            \item De maximale helling: $\theta_{max} = 20^\circ$
-            \item De maximale versnelling: $a_{max} = 0.7[m/s^2]$
-            \item De maximale snelheid: $v_{max} = 2.1[m/s]$
-        \end{itemize}
-
-\section{Onderzoek}
-    Om te bepalen welk type motor het beste is voor de toepassing wordt er vooral gekeken naar de last die de motor moet verdragen.
-    De last is opgedeeld in statische en dynamische last. 
-    De statische last is de last die de motor moet verdragen als de rover een vaste snelheid heeft.
-    De dynamische last is de last die de motor moet verdragen als de rover versnelt of vertraagt.
-    \newline
-    
-
-
-    % Beschrijf de aanpak en methoden die gebruikt zijn voor het onderzoek 
-    % en de evaluatie van de motoren en transmissiesystemen.
-    % Duidelijke formulering van de vraag waarop
-    % door middel van analyse/onderzoek een 
-    % antwoord wordt gezocht. (max 6 A4’tjes)
+        % Beschrijf de aanpak en methoden die gebruikt zijn voor het onderzoek 
+        % en de evaluatie van de motoren en transmissiesystemen.
+        % Duidelijke formulering van de vraag waarop
+        % door middel van analyse/onderzoek een 
+        % antwoord wordt gezocht. (max 6 A4’tjes)
 
 
 
-    \subsection{Statische last}
-        Er zijn twee onderdelen in de statische last, namelijk de zwaartekracht en de rolweerstand. 
+        \subsection{Statische last}
+            Er zijn twee onderdelen in de statische last, namelijk de zwaartekracht en de rolweerstand. 
 
-        \subsubsection*{Zwaartekracht}
-            Met de zwaartekracht wordt de kracht bedoeld die resulteerd uit de kracht die de rover omlaag duwt 
-            en de normaalkracht van het oppervlakte. 
-            Deze resulterende kracht is ervoor verantwoordelijk dat de rover de helling af ``wil'' rollen.
-            Deze is te berekenen met de formule:
+            \subsubsection*{Zwaartekracht}
+                Met de zwaartekracht wordt de kracht bedoeld die resulteerd uit de kracht die de rover omlaag duwt 
+                en de normaalkracht van het oppervlakte. 
+                Deze resulterende kracht is ervoor verantwoordelijk dat de rover de helling af ``wil'' rollen.
+                Deze is te berekenen met de formule:
+                
+                \begin{equation}
+                    F_{z} = m \cdot g \cdot \sin(\theta) 
+                \end{equation}
+
+                \begin{itemize}
+                    \item $F_{z}$ is last die de zwaartekracht veroorzaakt in $[N]$
+                    \item $m$ is de massa van de rover in $[kg]$
+                    \item $g$ is de zwaartekracht in $[m/s^2]$
+                    \item $\theta$ is de hoek van de helling in $[rad]$
+                \end{itemize}
             
-            \begin{equation}
-                F_{z} = m \cdot g \cdot \sin(\theta) 
-            \end{equation}
+            \subsubsection*{Rolweerstand}
+                De rolweerstand is de kracht die het rollen tegenwerkt en is een gevolg van de frictie tussen de wielen en de grond.
+                Deze kracht is te berekenen met de formule:
 
-            \begin{itemize}
-                \item $F_{z}$ is last die de zwaartekracht veroorzaakt in $[N]$
-                \item $m$ is de massa van de rover in $[kg]$
-                \item $g$ is de zwaartekracht in $[m/s^2]$
-                \item $\theta$ is de hoek van de helling in $[rad]$
-            \end{itemize}
-        
-        \subsubsection*{Rolweerstand}
-            De rolweerstand is de kracht die het rollen tegenwerkt en is een gevolg van de frictie tussen de wielen en de grond.
-            Deze kracht is te berekenen met de formule:
+                \begin{equation}
+                    F_{rw} =  u_{r} \cdot m \cdot g \cdot \cos(\theta)
+                \end{equation}
 
-            \begin{equation}
-                F_{rw} =  u_{r} \cdot m \cdot g \cdot \cos(\theta)
-            \end{equation}
+                \begin{itemize}
+                    \item $F_{rw}$ is de last die de rolweerstand veroorzaakt in $[N]$
+                    \item $u_{r}$ is de rolweerstandscoëfficiënt
+                    \item $g$ is de zwaartekracht in $[m/s^2]$
+                    \item $\theta$ is de hoek van de helling in $[rad]$
+                \end{itemize}
 
-            \begin{itemize}
-                \item $F_{rw}$ is de last die de rolweerstand veroorzaakt in $[N]$
-                \item $u_{r}$ is de rolweerstandscoëfficiënt
-                \item $g$ is de zwaartekracht in $[m/s^2]$
-                \item $\theta$ is de hoek van de helling in $[rad]$
-            \end{itemize}
+            \subsubsection*{Totaal statische last}
+                De totale statische last is dan de som van de zwaartekracht en de rolweerstand:
 
-        \subsubsection*{Totaal statische last}
-            De totale statische last is dan de som van de zwaartekracht en de rolweerstand:
+                \begin{equation}
+                    F_{stat} = F_{z} + F_{rw}
+                \end{equation}
 
-            \begin{equation}
-                F_{stat} = F_{z} + F_{rw}
-            \end{equation}
+                Om de motor te selecteren moet er gekeken worden naar de koppel. 
+                Om de koppel te berekenen per motor moet de volgende formule gebruikt worden:
 
-            Om de motor te selecteren moet er gekeken worden naar de koppel. 
-            Om de koppel te berekenen per motor moet de volgende formule gebruikt worden:
+                \begin{equation}
+                    T_{stat} = \frac{F_{stat} \cdot r}{4}
+                \end{equation}
 
-            \begin{equation}
-                T_{stat} = \frac{F_{stat} \cdot r}{4}
-            \end{equation}
-
-            Let hierbij op dat de deze last \textbf{per wiel} geldt.
+                Let hierbij op dat de deze last \textbf{per wiel} geldt.
 
 
 
-    \subsection{Dynamische last}
-        De dynamische last volgt uit twee onderdelen: de massa van de rover en de massatraagheid van de wielen.
-        
-        \subsubsection*{Massa}
-            De last die volgt uit de massa van de rover is te berekenen met de formule:
-
-            \begin{equation}
-                T_{m} = m \cdot a \cdot r
-            \end{equation}
-
-            \begin{itemize}
-                \item $T_{m}$ is het koppel die nodig is om de rover te versnellen $[Nm]$
-                \item $m$ is de massa van de rover in $[kg]$
-                \item $a$ is de versnelling van de rover in $[m/s^2]$
-                \item $r$ is de straal van het wiel in $[m]$
-            \end{itemize}
+        \subsection{Dynamische last}
+            De dynamische last volgt uit twee onderdelen: de massa van de rover en de massatraagheid van de wielen.
             
-        \subsubsection*{massatraagheid}
+            \subsubsection*{Massa}
+                De last die volgt uit de massa van de rover is te berekenen met de formule:
 
-        De massatraagheid van de wielen is te berekenen met de formule:
+                \begin{equation}
+                    T_{m} = m \cdot a \cdot r
+                \end{equation}
 
-        $$T_{inertiawielen} = \frac{I_{wielen} \cdot a}{r_{wiel}}$$
-        
-        - $T_{inertiawielen}$ is de koppel die het kost om het wiel te versnellen $[Nm]$ \newline
-        - $I_{wielen}$ is het traagheidsmoment van de wielen in $[kg \cdot m^2]$ \newline
-        - $a$ is de versnelling van de rover in $[m/s^2]$ \newline
-        - $r_{wiel}$ is de straal van het wiel in $[m]$ \newline \newline
+                \begin{itemize}
+                    \item $T_{m}$ is het koppel die nodig is om de rover te versnellen $[Nm]$
+                    \item $m$ is de massa van de rover in $[kg]$
+                    \item $a$ is de versnelling van de rover in $[m/s^2]$
+                    \item $r$ is de straal van het wiel in $[m]$
+                \end{itemize}
+                
+            \subsubsection*{Massatraagheid}
+                    
 
-        De totale dynamische koppel per wiel is dan de som van de massatraagheid van de rover en de massatraagheid van de wielen:
-        $$T_{dynamisch per wiel}[Nm] = \frac{T_{inertiarover}[Nm]}{4} + T_{inertiawielen}[Nm] + T_{statischperwiel}[Nm]$$ 
+                De massatraagheid \textbf{per wiel} is te berekenen met de formule:
 
+                \begin{equation}
+                    T_{J} = \frac{J \cdot a}{r}
+                \end{equation}
 
-\subsection{Analyse van de motoren}
-\subsubsection{gearbox?}
-
-\section{Resultaten}
-    Uitkomsten van de analyse, het onderzoek worden gepresenteerd. max 2 A4tjes
-
-    \subsection{last}
-    De statische en dynamische lasten zijn berekend voor verschillende hellingen. Uit deze berekeningen zijn de volgende resultaten gekomen: 
-
-        \begin{table}[h]
-            \centering
-            \begin{tabular}{|c|c|c|c|c|c|}
-            \hline
-            Helling & $-20 ^\circ$ & $-8.5 ^\circ$ & $0 ^\circ$ & $8.5 ^\circ$ & $20 ^\circ$ \\ \hline
-            Statisch [mNm]  & -45.20   & -8.91   & 18.22   & 44.96  & 79.45   \\ \hline
-            Dynamisch [mNm]  & 53.13  & 89.43   & 116.57  & 143.31  & 177.81  \\ \hline
-            \end{tabular}
-            \caption{Helling - Koppel}
-            \label{tab}
-        \end{table}
-        Dit is gedaan met de volgende formules:
-        $$T_{statisch} = \frac{r_{wiel}(m \cdot g \cdot sin(\theta) + u_r \cdot m \cdot g \cdot cos(\theta))}{4} = \frac{0.075(9.72 \cdot sin(\theta) +  0.972 \cdot cos(\theta))}{4}$$
-        $$T_{dynamisch} = T_{statisch} + \frac{m \cdot a \cdot r_{wiel}}{4} + \frac{I_{wielen} \cdot a}{r_{wiel}} = T_{statisch} + \frac{0.315}{4}+ 0.0196 $$
-        Deze formules zijn toegelicht in hoofdstuk 2.1.    
-        
-    \subsection{Motor}
-        
+                \begin{itemize}
+                    \item $T_{J}$ is het koppel dat nodig is voor de hoekversnelling van het wiel, in $[Nm]$
+                    \item $J$ is het traagheidsmoment van de wielen, in $[kg \cdot m^2]$
+                    \item $a$ is de versnelling van de rover, in $[m/s^2]$
+                    \item $r$ is de straal van het wiel, in $[m]$
+                \end{itemize}
+                
+            \subsubsection*{Totaal dynamische last}
+                De totale dynamische last koppel \textbf{per wiel} is beschreven met de formule:
+                \begin{equation}
+                    T_{dyn} = \frac{T_{m}}{4} + T_{J}
+                \end{equation}
 
 
-\section{Advies}
-    Aan de hand van het onderzoek en de
-    bijbehorende resultaten wordt een onderbouwd
-    advies uitgebracht. max 1 A4tje
+        \subsection{Meest voorkomende last}
+            Omdat de rover op zonne energie zal gaan rijden, is het belangrijk dat de energie efficiënt gebruikt wordt.
+            Door te onderzoeken welke last het meeste voorkomt, 
+            kan de motor en overbrenging zo worden gekozen om het meest efficiënt te werken voor die last. In lastberekeningen zijn maar drie variabelen: 
+            snelheid, versnelling en hellingshoek. 
+            \subsubsection*{Dynamiek}
+                We gaan ervan uit dat de rover altijd probeert om zijn maximale snelheid te rijden.
+                De rover zal op zijn langst 7 seconden in versnelling zijn. 4 seconden vertragen en dan 3 seconden versnellen. 
+                We maken de aanname dat de gemiddelde reistijd van de rover vele malen groter zal zijn dan die 7 seconden.
+                Om deze reden optimaliseren we de efficiëntie enkel op de statische last.
 
-\appendix
+            \subsubsection*{Terein}
+                Om een inschatting te maken over het terein op de maan is er een schriftelijk onderzoek gedaan.
+                Uit dit onderzoek is een publicatie van NASA gevonden uit 1969 (nasa sp-8023, 1969), waarin de eigenschappen van het maanlandschap worden beschreven.
+                In de grafiek in figuur \ref{fig:maanhelling} is te zien hoe groot de gemiddelde helling is op de maan.
+                Door te kijken naar de kleinste hellinglengte en het nominale landschap, zien we dat de gemiddelde helling zo'n $8.5^\circ$ is.
+
+                \begin{figure}[h]
+                    \includegraphics[width=\textwidth]{variation_of_mean_lunar_slope}
+                    \caption{Variatie gemiddelde maanhelling}
+                    \label{fig:maanhelling}
+                    \centering
+                \end{figure}
+                
+    \pagebreak
+    \section{Resultaten}
+        Uitkomsten van de analyse, het onderzoek worden gepresenteerd. max 2 A4tjes
+
+        \subsection{last}
+        De statische en dynamische lasten zijn berekend voor verschillende hellingen. 
+        Uit deze berekeningen zijn de volgende resultaten gekomen: 
+
+            \begin{table}[h]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|c|}
+                \hline
+                Helling & $-20 ^\circ$ & $-8.5 ^\circ$ & $0 ^\circ$ & $8.5 ^\circ$ & $20 ^\circ$ \\ \hline
+                Statisch [mNm]  & -45.20   & -8.91   & 18.22   & 44.96  & 79.45   \\ \hline
+                Dynamisch [mNm]  & 53.13  & 89.43   & 116.57  & 143.31  & 177.81  \\ \hline
+                \end{tabular}
+                \caption{Helling - Koppel}
+                \label{tab}
+            \end{table}
+            Dit is gedaan met de volgende formules:
+            $$T_{statisch} = \frac{r_{wiel}(m \cdot g \cdot sin(\theta) + u_r \cdot m \cdot g \cdot cos(\theta))}{4} = \frac{0.075(9.72 \cdot sin(\theta) +  0.972 \cdot cos(\theta))}{4}$$
+            $$T_{dynamisch} = T_{statisch} + \frac{m \cdot a \cdot r_{wiel}}{4} + \frac{I_{wielen} \cdot a}{r_{wiel}} = T_{statisch} + \frac{0.315}{4}+ 0.0196 $$
+            Deze formules zijn toegelicht in hoofdstuk 2.1.    
+            
+        \subsection{Motor}
+            
+
+
+    \section{Advies}
+        Aan de hand van het onderzoek en de
+        bijbehorende resultaten wordt een onderbouwd
+        advies uitgebracht. max 1 A4tje
+
+    \appendix
 
 \end{document}
